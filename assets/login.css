@@ -1,0 +1,39 @@
+.btn2 button{
+    margin-left: 0px;
+    margin-top: 15px;
+    padding: 15px;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    background-color: rgb(29 161 242);
+    opacity: .5 ;
+}
+
+.p-10 {padding: 10px;}
+.p-15 { padding: 15px;}
+
+
+.pt-20 {padding-top: 20px;}
+.pb-20 {padding-bottom: 20px;}
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    
+}
+
+.sm-logo{
+    height: 45px;
+}
+
+.text1{
+    text-align: center;
+}
+
+.form-group input{
+    padding: 30px;
+   
+   
+}
