@@ -10,7 +10,7 @@
     opacity: .5 ;
 }
 
-.p-10 {padding: 10px;}
+.p-10 {padding: 10px 0px;}
 .p-15 { padding: 15px;}
 
 
@@ -30,7 +30,10 @@ body{
 
 .text1{
     text-align: center;
+ 
 }
+
+
 
 .form-group input{
     padding: 30px;
