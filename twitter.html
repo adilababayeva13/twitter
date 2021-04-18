@@ -53,7 +53,32 @@
 
   </footer>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+  <script>
+$(document).ready(function(){
+    var a
+    var b
+    $("input").focus(function(){
+         a = $("#exampleInputEmail1").val()
+         b =$("#exampleInputPassword1").val()
+        if(a !== "" || b !== ""){
+            $("#butonjs").attr({
+
+                disabled:false
+            })
+        }
+        else{
+               $("#butonjs").attr({
+
+                disabled:true
+            })
+        }
+
+});
+
+ 
+});
 
 
 </body>
