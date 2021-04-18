@@ -40,7 +40,7 @@
                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password" >
                     </div>
                     <div class="btn2">
-                        <button type="button">
+                        <button type="button" id="butonjs" disabled>
                             Log In
                         </button>
                     </div>
@@ -60,6 +60,33 @@
 
         </div>
     </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+$(document).ready(function(){
+    var a
+    var b
+    $("input").focus(function(){
+         a = $("#exampleInputEmail1").val()
+         b =$("#exampleInputPassword1").val()
+        if(a !== "" || b !== ""){
+            $("#butonjs").attr({
+
+                disabled:false
+            })
+        }
+        else{
+               $("#butonjs").attr({
+
+                disabled:true
+            })
+        }
+
+});
+
+ 
+});
+</script>
   
 </body>
 
