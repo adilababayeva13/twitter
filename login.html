@@ -46,7 +46,7 @@
                     </div>
                     
                     <div class="text1 pt-20">
-                        <a style=" color: rgb(71, 146, 207);" href="#">Forgot password?  </a>·
+                        <a style=" color: #4792cf;" href="#">Forgot password?  </a>·
                         <a style=" color: rgb(71, 146, 207);" href="#"> Sign up for Twitter</a>
               
                     </div>
@@ -64,43 +64,29 @@
 
   <script>
 $(document).ready(function(){
-    var a;
-    var b;
-    $("input").keypress(function(){
-         a = $("#exampleInputEmail1").val()
-         b =$("#exampleInputPassword1").val()
-        if(a !== "" && b !== ""){
-            $("#butonjs").attr({
 
-                disabled:false
-            })
+    function loginValidator(){
+        var a = $("#exampleInputEmail1").val();
+        var b =$("#exampleInputPassword1").val();
+        
+        if(a.trim() !== "" && b.trim() !== ""){
+            $("#butonjs").attr({
+                disabled: false
+            });
             $("button").css("background-color", "rgb(2, 88, 248)");
         }
 
 
         else{
                $("#butonjs").attr({
-
-                disabled:true
-            })
+                disabled: true
+            });
+            $("button").css("background-color", "rgb(29 161 242)");
         }
 
-});
+    }
 
-$("document").click(function(){
-        
-        if(a == "" && b == ""){
-            $("#butonjs").attr({
-
-                disabled:true
-            })
-            $("button").css("background-color", "rgb(71, 146, 207)");
-        }
-
-
-});
-
-
+    $('input').on('input blur', loginValidator);
  
 });
 </script>
