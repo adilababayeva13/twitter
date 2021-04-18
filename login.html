@@ -64,17 +64,20 @@
 
   <script>
 $(document).ready(function(){
-    var a
-    var b
-    $("input").focus(function(){
+    var a;
+    var b;
+    $("input").keypress(function(){
          a = $("#exampleInputEmail1").val()
          b =$("#exampleInputPassword1").val()
-        if(a !== "" || b !== ""){
+        if(a !== "" && b !== ""){
             $("#butonjs").attr({
 
                 disabled:false
             })
+            $("button").css("background-color", "rgb(2, 88, 248)");
         }
+
+
         else{
                $("#butonjs").attr({
 
@@ -83,6 +86,20 @@ $(document).ready(function(){
         }
 
 });
+
+$("document").click(function(){
+        
+        if(a == "" && b == ""){
+            $("#butonjs").attr({
+
+                disabled:true
+            })
+            $("button").css("background-color", "rgb(71, 146, 207)");
+        }
+
+
+});
+
 
  
 });
