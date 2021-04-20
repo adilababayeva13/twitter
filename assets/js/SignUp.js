@@ -17,6 +17,7 @@ $(document).ready(function(){
         $("#name").css("border-style", "solid");
         $("#name").css("border-width", "1px");
 
+
         }
 
     function ChangeColor2(){
@@ -25,6 +26,12 @@ $(document).ready(function(){
         }
     function Default2(){
             $("#number").addClass("change2");
+            $("#number").css("border-style", "solid");
+            $("#number").css("border-width", "1px");
+             $("#number").css("box-shadow", "0px 0px 0px red");
+             $("#number").css("border-color", "rgb(184, 182, 182) ");
+             $("#telHelp").text("");
+             $("#number").removeClass("change3");
             
             }
            
@@ -52,20 +59,21 @@ $(document).ready(function(){
 
     function ChangeColor1(e){
     
-     var f=$("#number").val();
+     var place=$("#number").val();
      var array=[];
      array.push(e.key);
-    console.log(array);
-
+    
     var letters=[ 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v','w', 'x', 'y', 'z','[',']',';','{', '}',':','"','<','>', ',','.','/','?',"'"];
 
     var numbers=['0','1', '2', '3', '4', '5', '6', '7', '8','9'];
-
+    
     for(var i=0; i<letters.length; i++){
+        
     if(array.indexOf(letters[i]) !== -1){
         $("#number").css("border-color", "red");
         $("#number").css("box-shadow", "0px 0px 3px red");
         $("#telHelp").text("Please enter a valid phone number.");
+        $("#number").addClass("change3");
     }}
       
     for(var k=0; k<numbers.length; k++){
@@ -75,30 +83,67 @@ $(document).ready(function(){
             $("#telHelp").text("");
         }}
 
-        if(e.key == 8){
-
-           
-                  for(var l=0; l<numbers.length; l++){
-                    if(array.indexOf(numbers[l]) !== -1){
-                        $("#number").css("border-color", "#45a9ec");
-                        $("#number").css("box-shadow", "0px 0px 3px #45a9ec");
-                        $("#telHelp").text("");
-                    }}
-        }
+    
 
     }        
+   
+   
+   
+
+    function removeOptions(){  //removes options call each time the day selector is changed
+      
+   
+   var monthselected=$("#monthSelect");
+   var feb=$("#monthSelect option[value='02']");
+   var apr=$("#monthSelect option[value='04']");
+   var june=$("#monthSelect option[value='06']");
+   var sep=$("#monthSelect option[value='09']");
+   var nov=$("#monthSelect option[value='11']");
+   
+
+
+    if(monthselected == feb){
     
-  
+        
+        $("#dayselect option[value='31']").remove();
+    }
+    if(monthselected == apr){
+    
+      
+        
+        $("#dayselect option[value='31']").remove();
+    }
+    if(monthselected == june){
+    
+       
+        
+        $("#dayselect option[value='31']").remove();
+    }
+    if(monthselected == sep){
+    
+       
+        
+        $("#dayselect option[value='31']").remove();
+    }
+    if(monthselected == nov){
+    
+      
+        
+        $("#dayselect option[value='31']").remove();
+    }
+
+      
+    }
+
+   
+        
     
     function SignValidator(){
         var a = $("#name").val();
         var b =$("#number").val();
-        var c=$("#month option").text();
-        var d=$("#day option").text();
-        var e=$("#year option").text();
+      
         
-        
-        if(a.trim() !== "" && b.trim() !== "" && c !== "Month" && d !=="Day" && e !== "Year"){
+        if(a.trim() !== "" && b.trim() !== "" && !($("#month option[value='00']"))&& !($("#day option[value='00']"))&& !($("#year option[value='00']")) ){
             $("#button").attr({
                 disabled: false
             });
@@ -124,7 +169,17 @@ $(document).ready(function(){
     $("#name").on('blur', Default);
     $("#number").on('blur', Default2);
     $("#name").on('input', ChangeColor3);
-    $("#number").on('keypress', ChangeColor1);
+    $("#number").on('keyup', ChangeColor1);
+    $("option").on('change',removeOptions)
+    
+    function text(e){
+        var letter =e.key;
+        var input=[];
+        input.push(letter);
+        
+         $("#name").val( input +"/50");
+     }
+ 
    
 
 });
