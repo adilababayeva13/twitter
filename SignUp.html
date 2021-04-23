@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/SignUp.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet"> 
+        <link rel="shortcut icon" href="https://img.icons8.com/fluent/96/000000/twitter.png" type="image/x-icon"> 
     <title>Sign up for Twitter/Twitter</title>
 </head>
 
@@ -31,12 +32,15 @@
 
             <div class="form-group">
               
-              <input type="text" class="form-control" id="name" aria-describedby="nameHelp" aria-valuetext="" placeholder="Name" maxlength="50">
+              <input type="text" required class="form-control" id="name" aria-describedby="nameHelp"  maxlength="50">
+              <span id="span-name" class="label-name">Name</span>
+              <span id="span-length" class="label-length"></span>
               <p id="nameHelp"></p>
             </div>
             <div class="form-group">
               
-              <input type="tel" class="form-control" id="number" placeholder="Phone">
+              <input type="tel" required class="form-control" id="number" >
+              <span id="span-phone"  class="label-phone">Phone</span>   
               <p id="telHelp"></p>
             </div>
            
@@ -50,7 +54,7 @@
   
 
   <select name="month" class="int"  id="month" onBlur="monthselected=document.getElementById('month').value;">
-    <option selected value="00">Month</option>
+    <option  selected value="">Month</option>
     <option id="monthSelect" value="01">January</option>
     <option id="monthSelect" value="02">February</option>
     <option id="monthSelect" value="03">March</option>
@@ -66,7 +70,7 @@
  </select> 
 
  <select id="day">
-      <option  selected value="00">Day</option>
+      <option  selected value="">Day</option>
       <option id="dayselect" value="01">1</option>
       <option id="dayselect" value="02">2</option>
       <option id="dayselect" value="03">3</option>
@@ -101,7 +105,7 @@
  </select>
 
  <select id="year">
-      <option selected value="00">Year</option>
+      <option selected value="">Year</option>
       <option value="2021">2021</option>
       <option value="2020">2020</option>
       <option value="2019">2019</option>

@@ -59,18 +59,13 @@ h3{
 #name,#number{
     width: 530px;
     margin-left: 30px;
-    height: 60px;
+    height: 67px;
     border-radius: 5px;
     border: rgb(184, 182, 182) solid 1px;
     font-size: 16px;
-  
-}
-#number{
     margin-bottom: 0px;
 }
-#name{
-    margin-bottom: 0px;
-}
+
 #a{
     color:#45a9ec ;
     margin-left: 30px;
@@ -125,31 +120,73 @@ h6{
     margin-left: 8px;
 }
 
-.change::-webkit-input-placeholder {
-  color: #45a9ec;
-  font-size: 12px;
-  float: left;
+.label-name{
+    position: absolute;
+    pointer-events: none;
+    left: 45px;
+    top: 168px;
+    transition: 0.2s ease all;
+    font-weight: 450;
+    font-size: 17px;
+    color: rgb(107, 106, 106);
+  
+   
+}
+.label-phone{
+    position: absolute;
+    pointer-events: none;
+    left: 45px;
+    top: 266px;
+    transition: 0.2s ease all;
+    font-weight: 450;
+    font-size: 17px;
+    color: rgb(107, 106, 106);
+  
+   
+}
+
+.change-label-name{
+    position: absolute;
+    pointer-events: none;
+    left: 41px;
+    top: 155px;
+    transition: 0.2s ease all;
+    font-weight: 400;
+    font-size: 13.5px;
+    color:#1da1f2;
+  
+}
+
+.change-label-phone{
+    position: absolute;
+    pointer-events: none;
+    left: 41px;
+    top: 252px;
+    transition: 0.2s ease all;
+    font-weight: 400;
+    font-size: 13.5px;
+    color:#1da1f2;
+  
+}
+
+.change-label-name-false{
+    position: absolute;
+    pointer-events: none;
+    left: 41px;
+    top: 155px;
+    transition: 0.2s ease all;
+    font-weight: 400;
+    font-size: 13.5px;
+    color:red;
  
 }
-
-
-
-  .change3::-webkit-input-placeholder {
-    color:red;
-    font-size: 12px;
-    float: left;
-    
-  }
-  .change3 {
-   border-style: groove;
-   border-color: rgb(165, 3, 3);
-   
-    
-}
-.change2::-webkit-input-placeholder {
-    color: #707274;
-    font-size: 16px;
-    float: none;
-   
-  }
   
+.label-length{
+    position: absolute;
+    pointer-events: none;
+    left: 515px;
+    top: 155px;
+    font-weight: 400;
+    font-size: 13px;
+    color:gray;
+}
