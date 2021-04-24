@@ -32,6 +32,7 @@ $(document).ready(function(){
         }
 
     function ChangeColor2(){
+        
         $("#span-phone").removeClass("label-phone");
         $("#span-phone").addClass("change-label-phone");
         $("#span-phone").css("color","#1da1f2");
@@ -43,8 +44,12 @@ $(document).ready(function(){
         $("#number").css("box-shadow", "0px 0px 2px rgb(51, 124, 192)");
         }
     function Default2(){
-        $("#span-phone").removeClass("change-label-phone");
+        var c = $("#number").val();
+        if(c.trim() == "" ){
+            $("#span-phone").removeClass("change-label-phone");
         $("#span-phone").addClass("label-phone");
+        }
+       
         $("#span-phone").css("color","gray");
             $("#number").css("border-style", "solid");
             $("#number").css("border-width", "1px");
@@ -127,9 +132,12 @@ $(document).ready(function(){
         function SignValidator(){
         var a = $("#name").val();
         var b =$("#number").val();
+        var x = document.getElementById("month").value;
+        var y = document.getElementById("day").value;
+        var z = document.getElementById("year").value;
       
         
-        if(a.trim() !== "" && b.trim() !== "" ){
+        if(a.trim() !== "" && b.trim() !== "" && (x !==0)&&(y !==0)&& (z !==0)){
             $("#button").attr({
                 disabled: false
             });
@@ -148,14 +156,91 @@ $(document).ready(function(){
         }
 
     }
+ 
+    // use instead link
+    function ChangeInput(){
+        var x = document.getElementById("link").classList.contains("checkLink1");
+     if(x){
+        $("#link").html("Use phone instead");
+        $("#link").removeClass("checkLink1");
+        $("#span-phone").text("Email");
+        
+        $("#number").keyup(function(e){
+            var place=$("#number").val();
+            if(place.trim() == ""){
+                $("#telHelp").html("");
+            }
 
-    $('input').on('input blur', SignValidator);
+            $("#telHelp").text("Please enter a valid email.");
+            var array=[];
+            array.push(e.key);
+            var checking = array.split("@");
+           
+console.log(checking);
+    });
+    }
+
+     else{
+         $("#link").html("Use email instead");
+        $("#link").addClass("checkLink1");
+        $("#span-phone").text("Phone");
+       
+     }
+        
+    }
+ 
+    //set Day due to month
+    function ChangeDay(){
+       var x = document.getElementById("month").value;
+       var y = document.getElementById("day");
+       
+       console.log( "You selected: " + x);
+       if(x == 2){
+          y.remove(30);
+          y.remove(30);
+          var leng = $("#day").children('option').length;
+          console.log("length:"+ leng)
+       }
+       if(x == 4 || x== 6 || x ==9 || x==11){
+       
+        var leng = $("#day").children('option').length;
+        if(leng == 30){
+            var newOption = document.createElement("option");
+            newOption.text = "30";
+            document.getElementById("day").add(newOption);
+        }
+        y.remove(31);
+     }
+
+     if(x == 1 || x== 3 || x ==5 || x==7 || x ==8 || x==10 || x ==12){
+       
+        var leng = $("#day").children('option').length;
+        if(leng == 31){
+            var newOption = document.createElement("option");
+            newOption.text = "31";
+            document.getElementById("day").add(newOption);
+        }
+        if(leng == 30){
+            var newOption = document.createElement("option");
+            var newOption2 = document.createElement("option");
+            newOption.text = "30";
+            newOption2.text = "31";
+            document.getElementById("day").add(newOption);
+            document.getElementById("day").add(newOption2);
+        }
+        
+     }
+       
+    }
+
+   
     $("#name").on('focus', ChangeColor);
     $("#number").on('focus', ChangeColor2);
     $("#name").on('blur', Default);
     $("#number").on('blur', Default2);
     $("#name").on('input', ChangeColor3);
     $("#number").on('keyup', ChangeColor1);
-    
-    
+    $("#link").on('click', ChangeInput);
+    $("#month").on('change', ChangeDay);
+    $("#year").on('change', SignValidator);
 });
