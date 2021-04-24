@@ -137,7 +137,7 @@ $(document).ready(function(){
         var z = document.getElementById("year").value;
       
         
-        if(a.trim() !== "" && b.trim() !== "" && (x !==0)&&(y !==0)&& (z !==0)){
+        if(a.trim() !== "" && b.trim() !== "" && x !== "Month" && y !== "Day" && z !== "Year"){
             $("#button").attr({
                 disabled: false
             });
