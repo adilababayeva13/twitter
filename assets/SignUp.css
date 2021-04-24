@@ -210,14 +210,43 @@ h6{
     display: flex;
     justify-content: center;
     left: 10px;
+    
 }
 /* step2 Begins */
 #CheckBox:hover{
 cursor: pointer;
  box-shadow: 0px 0px 15px #068cfa;
 }
-#HelpCenter:hover{
+.HelpCenter:hover{
     color:#1da1f2 ;
     
 }
 /* step2 finishes */
+
+/*Step3 begins */
+#Step3Form{
+    margin-top: 130px;
+}
+.Step3Inputs{
+    width: 540px;
+    margin-left: 30px;
+    height: 60px;
+    margin-bottom: 20px;
+  padding-bottom: 0px;
+}
+
+.Step3Span{
+    font-size: 13px;
+    color: rgb(131, 128, 128);
+    font-weight: 450;
+    position: absolute;
+    margin-left: 40px;
+    z-index: 2;
+    margin-top: -13%;
+}
+
+
+.Step3SignUpBTN:hover{
+    background-color: rgb(21, 54, 126);
+    
+}
