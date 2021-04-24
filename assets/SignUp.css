@@ -33,7 +33,7 @@ body{
 #flex{
     display: flex;
 }
-#button{
+#button , .Step4BTN{
     background-color:#84C8F5 ;
     border-radius: 25px;
     border: solid 3px #84C8F5;
@@ -249,4 +249,21 @@ cursor: pointer;
 .Step3SignUpBTN:hover{
     background-color: rgb(21, 54, 126);
     
+}
+/*Step3 finishes */
+
+/* step4 begins */
+.defaultStep4SPAN{
+    position: absolute;
+    font-size: 17px;
+    color: rgb(106, 108, 114);
+    margin-left: 43px;
+    margin-top:-10.5%;
+}
+.changedStep4SPAN{
+    position: absolute;
+    font-size: 12.5px;
+    color: #1da1f2;
+    margin-left: 43px;
+    margin-top:-12.2%;
 }
