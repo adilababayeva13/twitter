@@ -164,27 +164,58 @@ $(document).ready(function(){
         $("#link").html("Use phone instead");
         $("#link").removeClass("checkLink1");
         $("#span-phone").text("Email");
-        
-        $("#number").keyup(function(e){
-            var place=$("#number").val();
-            if(place.trim() == ""){
-                $("#telHelp").html("");
+        document.getElementById("number").id="email";
+        document.getElementById("email")  .addEventListener("keyup", function(e) {
+            var x = document.getElementById("email").value; 
+            x=x.split("@");
+            if(x[1] === "gmail.com"){
+                console.log("it works");
+             $("#email").css("border-color", "rgb(107, 177, 241)");
+                $("#telHelp").text("");
+                $("#span-phone").css("color","#45a9ec");
             }
+            else{
+                $("#email").css("border-color", "red");
+                $("#telHelp").text("Please enter a valid email.");
+                $("#span-phone").css("color","red"); 
+                $("#email").css("border-style", "groove");
+                $("#email").css("border-width", "3px");
+                $("#email").css("border-radius", "5px");
+                $("#email").css("box-shadow", "0px 0px 0px red");
+               
+            }
+          }); 
 
-            $("#telHelp").text("Please enter a valid email.");
-            var array=[];
-            array.push(e.key);
-            var checking = array.split("@");
+          document.getElementById("email")  .addEventListener("blur", function() {
+             var content=$("#email").val();
            
-console.log(checking);
-    });
+             if(content ==""){
+                console.log("???");
+               $("#email").css("border", "rgb(184, 182, 182) solid 1px");
+                $("#telHelp").text("");
+                $("#span-phone").css("color","gray");
+                $("#span-phone").removeClass("change-label-phone");
+                $("#span-phone").addClass("label-phone");
+             }
+           else{
+            $("#span-phone").removeClass("label-phone");
+            $("#span-phone").addClass("change-label-phone");
+            $("#span-phone").css("color","gray");
+            $("#email").css("border", "rgb(184, 182, 182) solid 1px");
+            $("#telHelp").text("");
+           }
+            
+               
+            
+     }); 
+      
     }
 
      else{
          $("#link").html("Use email instead");
         $("#link").addClass("checkLink1");
         $("#span-phone").text("Phone");
-       
+        document.getElementById("email").id="number";
      }
         
     }
