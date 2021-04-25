@@ -267,3 +267,12 @@ cursor: pointer;
     margin-left: 43px;
     margin-top:-12.2%;
 }
+
+@media only screen and (max-width: 700px) {
+    body {
+        background-color: rgb(255, 255, 255);
+      }
+      #inner{
+        margin-top:5px ; 
+      }
+}
