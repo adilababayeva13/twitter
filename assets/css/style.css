@@ -1,0 +1,112 @@
+header{
+    width: 100%;
+    height: 40px;
+    /* display: flex;
+    justify-content: space-around; */
+    
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    color:#747474;
+  
+}
+nav{
+    margin: 0 auto;
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 100%;
+}
+.headLogo{
+    display: flex;
+    padding-left: 10px;
+}
+img{
+    margin: 0 0;
+    height: 24px;
+    
+}
+a{
+    color:#747474 !important;
+}
+.headText{
+    line-height: 32px;
+}
+#dropColor{
+    color:#747474 !important;
+    font-size: 14px;
+}
+h1{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+}
+main{
+    padding-left: 10px !important;;
+    width:600px ;
+
+    
+}
+#search{
+  
+    margin: 20px 0;
+    display: block;
+    width: 80px;
+    font-weight: bold;
+}
+#inputMain{
+    /* border-color: #eef1f3 ; */
+    width:350px;
+    border-color: red;
+}
+.error{
+    color: rgb(226, 19, 19);
+    font-size: 0.9em;
+}
+#userFail{
+    color: rgb(97, 155, 221)!important;
+  
+}
+.account{
+    /* display: flex; */
+    align-items: center;
+    margin-bottom: 10px;
+    display: none;
+}
+#profile{
+    height:35px ;
+    width: 35px;
+    margin-right:15px;
+  
+    border-radius: 100%;
+
+}
+h5{
+    padding-top: 10px;
+    margin: 0;
+    font-size: 18px;
+}
+h6{
+    font-weight: normal;
+}
+
+.dropdown-col{
+    font-size: 12px;
+    margin-left: 30px;
+}
+div.dropdown-multicol2{
+    width: 350px;
+  }
+  div.dropdown-multicol2>div.dropdown-col{
+    display:inline-block;
+    width: 120px;
+  }
+  li{
+      list-style: none;
+  }
