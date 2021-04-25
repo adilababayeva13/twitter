@@ -166,6 +166,7 @@ $(document).ready(function(){
         $("#link").html("Use phone instead");
         $("#link").removeClass("checkLink1");
         $("#span-phone").text("Email");
+        $(".number").attr("type","email");
         document.getElementById("number").id="email";
         document.getElementById("email")  .addEventListener("keyup", function(e) {
             var x = document.getElementById("email").value; 
@@ -217,6 +218,7 @@ $(document).ready(function(){
          $("#link").html("Use email instead");
         $("#link").addClass("checkLink1");
         $("#span-phone").text("Phone");
+        $(".number").attr("type","tel");
         document.getElementById("email").id="number";
      }
         
