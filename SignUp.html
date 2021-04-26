@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/SignUp.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet"> 
+        <link rel="shortcut icon" href="https://img.icons8.com/fluent/96/000000/twitter.png" type="image/x-icon"> 
+    <title>Sign up for Twitter/Twitter</title>
+</head>
+
+<body>
+  
+
+        <div id="inner">
+         
+ <div id="flex">
+         <div id="logo">  <svg xmlns="http://www.w3.org/2000/svg" 
+            width="33" height="33"
+            viewBox="0 0 172 172"
+            style=" fill:#1DA1F2; margin-left:270px; margin-top: 13px; "><g   stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dashoffset="0" style="mix-blend-mode:darken"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#1DA1F2"><path d="M172.215,35.905c-6.35594,2.82188 -13.16875,4.71656 -20.33094,5.57656c7.31,-4.38063 12.92687,-11.31438 15.56062,-19.565c-6.82625,4.04469 -14.41844,6.9875 -22.4675,8.57312c-6.45,-6.88 -15.64125,-11.16656 -25.81344,-11.16656c-19.53812,0 -35.38094,15.82937 -35.38094,35.3675c0,2.76812 0.3225,5.46906 0.92719,8.0625c-29.40125,-1.47813 -55.45656,-15.56063 -72.91187,-36.96656c-3.05031,5.24062 -4.78375,11.31437 -4.78375,17.79125c0,12.26844 6.235,23.09906 15.73531,29.455c-5.805,-0.18813 -11.26062,-1.78719 -16.03094,-4.43438c0,0.14781 0,0.29563 0,0.44344c0,17.14625 12.20125,31.43031 28.36656,34.69562c-2.95625,0.80625 -6.08719,1.23625 -9.31219,1.23625c-2.28438,0 -4.50156,-0.215 -6.665,-0.645c4.515,14.04219 17.57625,24.295 33.04281,24.57719c-12.09375,9.48688 -27.34531,15.13063 -43.92719,15.13063c-2.86219,0 -5.67062,-0.16125 -8.42531,-0.49719c15.64125,10.05125 34.23875,15.89656 54.22031,15.89656c65.06438,0 100.64688,-53.89781 100.64688,-100.63344c0,-1.53187 -0.04031,-3.07719 -0.09406,-4.58219c6.90687,-4.98531 12.9,-11.22031 17.64344,-18.31531z"></path></svg></div> 
+           <button onclick="window.location.href='SignUpStep2.html'" id="button" disabled> Next</button>
+        </div>
+
+           <h3 id="h3"> Create your account</h3>
+
+           <form>
+
+            <div class="form-group">
+              
+              <input type="text" required class="form-control" id="name" aria-describedby="nameHelp"  maxlength="50">
+              <span id="span-name" class="label-name">Name</span>
+              <span id="span-length" class="label-length"></span>
+              <p id="nameHelp"></p>
+            </div>
+            <div class="form-group">
+              
+              <input type="tel" required class="form-control number" id="number" >
+              <span id="span-phone"  class="label-phone">Phone</span>   
+              <p id="telHelp"></p>
+            </div>
+           
+          
+          </form>
+
+
+  <a id="link" href="#" class="checkLink1">Use email instead</a>
+  <h6>Date of brith</h6>
+  <p id="p">This will not be shown publicly. Confirm your own age, even if this account is for a business, a pet, or something else.</p>
+  
+
+  <select name="month" class="int"  id="month" >
+    <option  selected value="0">Month</option>
+    <option id="month1" value="1">January</option>
+    <option id="month2" value="2">February</option>
+    <option id="month3" value="3">March</option>
+    <option id="month4" value="4">April</option>
+    <option id="month5" value="5">May</option>
+    <option id="month6" value="6">June</option>
+    <option id="month7" value="7">July</option>
+    <option id="month8" value="8">August</option>
+    <option id="month9" value="9">September</option>
+    <option id="month10" value="10">October</option>
+    <option id="month11" value="11">November</option>
+    <option id="month12" value="12">December</option>
+ </select> 
+
+ <select id="day" >
+      <option  selected value="0">Day</option>
+      <option id="dayselect" value="1">1</option>
+      <option id="dayselect" value="2">2</option>
+      <option id="dayselect" value="3">3</option>
+      <option id="dayselect" value="4">4</option>
+      <option id="dayselect" value="5">5</option>
+      <option id="dayselect" value="6">6</option>
+      <option id="dayselect" value="7">7</option>
+      <option id="dayselect" value="8">8</option>
+      <option id="dayselect" value="9">9</option>
+      <option id="dayselect" value="10">10</option>
+      <option id="dayselect" value="11">11</option>
+      <option id="dayselect" value="12">12</option>
+      <option id="dayselect" value="13">13</option>
+      <option id="dayselect" value="14">14</option>
+      <option id="dayselect" value="15">15</option>
+      <option id="dayselect" value="16">16</option>
+      <option id="dayselect" value="17">17</option>
+      <option id="dayselect" value="18">18</option>
+      <option id="dayselect" value="19">19</option>
+      <option id="dayselect" value="20">20</option>
+      <option id="dayselect" value="21">21</option>
+      <option id="dayselect" value="22">22</option>
+      <option id="dayselect" value="23">23</option>
+      <option id="dayselect" value="24">24</option>
+      <option id="dayselect" value="25">25</option>
+      <option id="dayselect" value="26">26</option>
+      <option id="dayselect" value="27">27</option>
+      <option id="dayselect" value="28">28</option>
+      <option id="dayselect" value="29">29</option>
+      <option id="dayselect" value="30">30</option>
+      <option id="dayselect" value="31">31</option>
+ </select>
+
+ <select id="year" >
+      <option selected value="0">Year</option>
+      <option value="2021">2021</option>
+      <option value="2020">2020</option>
+      <option value="2019">2019</option>
+      <option value="2018">2018</option>
+      <option value="2017">2017</option>
+      <option value="2016">2016</option>
+      <option value="2015">2015</option>
+      <option value="2014">2014</option>
+      <option value="2013">2013</option>
+      <option value="2012">2012</option>
+      <option value="2011">2011</option>
+      <option value="2010">2010</option>
+      <option value="2009">2009</option>
+      <option value="2008">2008</option>
+      <option value="2007">2007</option>
+      <option value="2006">2006</option>
+      <option value="2005">2005</option>
+      <option value="2004">2004</option>
+      <option value="2003">2003</option>
+      <option value="2002">2002</option>
+      <option value="2001">2001</option>
+      <option value="2000">2000</option>
+      <option value="1999">1999</option>
+      <option value="1998">1998</option>
+      <option value="1997">1997</option>
+      <option value="1996">1996</option>
+      <option value="1995">1995</option>
+      <option value="1994">1994</option>
+      <option value="1993">1993</option>
+      <option value="1992">1992</option>
+      <option value="1991">1991</option>
+      <option value="1990">1990</option>
+      <option value="1989">1989</option>
+      <option value="1988">1988</option>
+      <option value="1987">1987</option>
+      <option value="1986">1986</option>
+      <option value="1985">1985</option>
+      <option value="1984">1984</option>
+      <option value="1983">1983</option>
+      <option value="1982">1982</option>
+      <option value="1981">1981</option>
+      <option value="1980">1980</option>
+      <option value="1979">1979</option>
+      <option value="1978">1978</option>
+      <option value="1977">1977</option>
+      <option value="1976">1976</option>
+      <option value="1975">1975</option>
+      <option value="1974">1974</option>
+      <option value="1973">1973</option>
+      <option value="1972">1972</option>
+      <option value="1971">1971</option>
+      <option value="1970">1970</option>
+      <option value="1969">1969</option>
+      <option value="1968">1968</option>
+      <option value="1967">1967</option>
+      <option value="1966">1966</option>
+      <option value="1965">1965</option>
+      <option value="1964">1964</option>
+      <option value="1963">1963</option>
+      <option value="1962">1962</option>
+      <option value="1961">1961</option>
+      <option value="1960">1960</option>
+      <option value="1959">1959</option>
+      <option value="1958">1958</option>
+      <option value="1957">1957</option>
+      <option value="1956">1956</option>
+      <option value="1955">1955</option>
+      <option value="1954">1954</option>
+      <option value="1953">1953</option>
+      <option value="1952">1952</option>
+      <option value="1951">1951</option>
+      <option value="1950">1950</option>
+      <option value="1949">1949</option>
+      <option value="1948">1948</option>
+      <option value="1947">1947</option>
+      <option value="1946">1946</option>
+      <option value="1945">1945</option>
+      <option value="1944">1944</option>
+      <option value="1943">1943</option>
+      <option value="1942">1942</option>
+      <option value="1941">1941</option>
+      <option value="1940">1940</option>
+      <option value="1939">1939</option>
+      <option value="1938">1938</option>
+      <option value="1937">1937</option>
+      <option value="1936">1936</option>
+      <option value="1935">1935</option>
+      <option value="1934">1934</option>
+      <option value="1933">1933</option>
+      <option value="1932">1932</option>
+      <option value="1931">1931</option>
+      <option value="1930">1930</option>
+      <option value="1929">1929</option>
+      <option value="1928">1928</option>
+      <option value="1927">1927</option>
+      <option value="1926">1926</option>
+      <option value="1925">1925</option>
+      <option value="1924">1924</option>
+      <option value="1923">1923</option>
+      <option value="1922">1922</option>
+      <option value="1921">1921</option>
+      <option value="1920">1920</option>
+      <option value="1919">1919</option>
+      <option value="1918">1918</option>
+      <option value="1917">1917</option>
+      <option value="1916">1916</option>
+      <option value="1915">1915</option>
+      <option value="1914">1914</option>
+      <option value="1913">1913</option>
+      <option value="1912">1912</option>
+      <option value="1911">1911</option>
+      <option value="1910">1910</option>
+      <option value="1909">1909</option>
+      <option value="1908">1908</option>
+      <option value="1907">1907</option>
+      <option value="1906">1906</option>
+      <option value="1905">1905</option>
+      <option value="1904">1904</option>
+      <option value="1903">1903</option>
+      <option value="1902">1902</option>
+      <option value="1901">1901</option>
+      <option value="1900">1900</option>
+ </select>
+
+</div>
+    
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./assets/js/SignUp.js"></script>
+
+</body>
+
+</html>

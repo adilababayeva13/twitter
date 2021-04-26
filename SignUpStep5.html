@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/SignUp.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet"> 
+        <link rel="shortcut icon" href="https://img.icons8.com/fluent/96/000000/twitter.png" type="image/x-icon"> 
+</head>
+<body>
+    <div id="inner">
+         
+        <div id="flex">
+            <button style="opacity: 0;" onclick="window.location.href='SignUpStep3.html'" disabled type="button" id="close"  class="close">
+                <span style="color: #0051ff; font-size:35px;top:12px;">&times;</span>
+              </button> 
+              
+            <div id="logo">  <svg xmlns="http://www.w3.org/2000/svg" 
+               width="33" height="33"
+               viewBox="0 0 172 172"
+               style=" fill:#1DA1F2; margin-left:270px; margin-top: 13px; "><g   stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dashoffset="0" style="mix-blend-mode:darken"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#1DA1F2"><path d="M172.215,35.905c-6.35594,2.82188 -13.16875,4.71656 -20.33094,5.57656c7.31,-4.38063 12.92687,-11.31438 15.56062,-19.565c-6.82625,4.04469 -14.41844,6.9875 -22.4675,8.57312c-6.45,-6.88 -15.64125,-11.16656 -25.81344,-11.16656c-19.53812,0 -35.38094,15.82937 -35.38094,35.3675c0,2.76812 0.3225,5.46906 0.92719,8.0625c-29.40125,-1.47813 -55.45656,-15.56063 -72.91187,-36.96656c-3.05031,5.24062 -4.78375,11.31437 -4.78375,17.79125c0,12.26844 6.235,23.09906 15.73531,29.455c-5.805,-0.18813 -11.26062,-1.78719 -16.03094,-4.43438c0,0.14781 0,0.29563 0,0.44344c0,17.14625 12.20125,31.43031 28.36656,34.69562c-2.95625,0.80625 -6.08719,1.23625 -9.31219,1.23625c-2.28438,0 -4.50156,-0.215 -6.665,-0.645c4.515,14.04219 17.57625,24.295 33.04281,24.57719c-12.09375,9.48688 -27.34531,15.13063 -43.92719,15.13063c-2.86219,0 -5.67062,-0.16125 -8.42531,-0.49719c15.64125,10.05125 34.23875,15.89656 54.22031,15.89656c65.06438,0 100.64688,-53.89781 100.64688,-100.63344c0,-1.53187 -0.04031,-3.07719 -0.09406,-4.58219c6.90687,-4.98531 12.9,-11.22031 17.64344,-18.31531z"></path></svg></div> 
+              <button id="Step4BTN" class="Step4BTN" onclick="window.location.href='SignUpStep5.html'" disabled> Next</button>
+           </div>
+
+         <h4 style="margin-top: 26px; margin-left: 60px;font-weight: 700;" >You'll need a password</h4>
+        <p style="margin-top: 16px; margin-left: 60px; color: rgb(103, 105, 107);">Make sure it’s 8 characters or more.</p>
+
+        <input  type="password" class="form-control Step3Inputs CheckClass" id="Step4Input" >
+
+        <span id="Step4SPAN" class="defaultStep4SPAN">Password</span>
+
+        <a class="HelpCenter" id="linkChangeType" style="font-size: 13px; margin-top: -3%; position: absolute; margin-left: 40px;" href="#">Reveal password</a>
+
+        <p style="color: red; font-size: 13px; margin-left: 40px;" id="Step5Allert">    </p>
+
+               </div>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <script type="text/javascript">
+       
+       function ChangeInput(){
+        var x = document.getElementById("Step4Input").classList.contains("CheckClass");
+        if(x){
+        $("#linkChangeType").html("Hide password");
+       $("#Step4Input").removeClass("CheckClass");
+       $("#Step4Input").attr("type", "text");}
+         else{
+         $("#linkChangeType").html("Reveal password");
+       $("#Step4Input").addClass("CheckClass");
+       $("#Step4Input").attr("type", "password");}}
+
+
+       function ChangeColor(){
+   
+   $("#Step4SPAN").removeClass("defaultStep4SPAN");
+   $("#Step4SPAN").addClass("changedStep4SPAN");
+   $("#Step4SPAN").css("color","#1DA1F2");
+   $("#Step5Allert").html("");
+   $("#Step4Input").css("border", "solid #1DA1F2 2px");
+  $("#Step4Input").css("border-radius", "5px");
+   $("#Step4Input").css("box-shadow", "0px 0px 3px #1DA1F2");
+
+    
+    }
+
+    function Default(){
+     var value=$("#Step4Input").val();
+     $("#Step5Allert").html("");
+     if(value.trim() == ""){
+  $("#Step4SPAN").addClass("defaultStep4SPAN");
+   $("#Step4SPAN").removeClass("changedStep4SPAN");
+   $("#Step4Input").css("border", "solid gray 1px");
+   $("#Step4Input").css("box-shadow", "0px 0px 0px #1DA1F2");
+   $("#Step4SPAN").css("color","gray");
+     }
+
+     else{
+   $("#Step4Input").css("border", "solid gray 1px");
+  $("#Step4Input").css("border-radius", "5px");
+   $("#Step4Input").css("box-shadow", "0px 0px 0px #1DA1F2");
+   $("#Step4SPAN").css("color","gray");
+        }
+      }
+
+
+      function SignValidator(e){
+        var value =  $("#Step4Input").val(); 
+        if(value.length < 8){
+            $("#Step4BTN").attr({
+                disabled: true
+            });
+            $("#Step4BTN").css("background-color", "#84C8F5");
+            $("#Step4BTN").css("border-color", "#84C8F5");}
+
+            if(value.length >= 8){
+   for(var i=4; i<value.length ; i++){
+       if(value[value.length -1] === value[value.length-2] &&value[value.length -2] === value[value.length-3]&& value[i] === value[i-1] && value[i-1] === value[i-2] && value[i-2] === value[i-3] && value[i-3] === value[i-4]){
+
+        $("#Step4BTN").attr({
+                disabled: true
+            });
+            $("#Step4BTN").css("background-color", "#84C8F5");
+            $("#Step4BTN").css("border-color", "#84C8F5");
+            
+       }
+       else{
+        $("#Step4BTN").attr({
+                disabled: false
+            });
+            $("#Step4BTN").css("background-color", "#1DA1F2");
+            $("#Step4BTN").css("border-color", "#1DA1F2");
+            $("#Step4Input").css("border", "solid #1DA1F2 2px");
+  $("#Step4Input").css("border-radius", "5px");
+   $("#Step4Input").css("box-shadow", "0px 0px 3px #1DA1F2");
+   $("#Step4SPAN").css("color","#1DA1F2");
+   $("#Step5Allert").html("");
+       }
+   }
+ }
+
+      }
+
+function ChangeColor2(e){
+   
+ var value =  $("#Step4Input").val();
+ if(value.length < 8){
+    $("#Step4Input").css("border", "solid red 1px");
+    $("#Step4Input").css("box-shadow", "0px 0px 3px red");
+    $("#Step4SPAN").css("color","red");
+    $("#Step5Allert").html("Your password needs to be at least 8 characters. Please enter a longer one.");
+    
+ }
+
+ if(value.length >= 8){
+   for(var i=4; i<value.length ; i++){
+       if(value[value.length -1] === value[value.length-2] &&value[value.length -2] === value[value.length-3]&& value[i] === value[i-1] && value[i-1] === value[i-2] && value[i-2] === value[i-3] && value[i-3] === value[i-4]){
+        $("#Step5Allert").html("Please enter a stronger password.");
+        $("#Step4BTN").attr({
+                disabled: true
+            });
+            $("#Step4BTN").css("background-color", "#84C8F5");
+            $("#Step4BTN").css("border-color", "#84C8F5");
+       }
+       else{
+        $("#Step4BTN").attr({
+                disabled: false
+            });
+            $("#Step4BTN").css("background-color", "#1DA1F2");
+            $("#Step4BTN").css("border-color", "#1DA1F2");
+            $("#Step4Input").css("border", "solid #1DA1F2 2px");
+  $("#Step4Input").css("border-radius", "5px");
+   $("#Step4Input").css("box-shadow", "0px 0px 3px #1DA1F2");
+   $("#Step4SPAN").css("color","#1DA1F2");
+   $("#Step5Allert").html("");
+       }
+   }
+ }
+}
+
+        $("#linkChangeType").on("click",ChangeInput);
+        $("#Step4Input").on("focus",ChangeColor);
+        $("#Step4Input").on("blur",Default);
+        $("#Step4Input").on("keyup",ChangeColor2);
+        $("#Step4Input").on("input",SignValidator);
+      </script>
+</body>
+</html>
