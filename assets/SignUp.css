@@ -65,6 +65,7 @@ body{
     border: rgb(184, 182, 182) solid 1px;
     font-size: 16px;
     margin-bottom: 0px;
+   
 }
 
 a{
@@ -271,11 +272,55 @@ cursor: pointer;
 @media only screen and (max-width: 700px) {
     body {
         background-color: rgb(255, 255, 255);
+        max-width: 700px;
+        height: auto;
       }
       #inner{
-        margin-top:5px ; 
+        margin-top:30px ; 
+       width: 80%;
+       height: auto;
+       margin-right: 5%;
        
-
       }
+   
+       #button{
+        margin-left: 60%;
+       }
+       #logo{
+        margin-left: -45%;
+       }
 
+      #name,.number{
+        width: 100%;
+        margin-left: 30px;
+        height: 67px;
+        border-radius: 5px;
+        border: rgb(184, 182, 182) solid 1px;
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+
+    #p{
+        width: 90%;
+       
+    }
+
+    #year{
+        width: 140px;
+        height: 55px;
+        border-radius: 3px;
+        border: rgb(207, 207, 207) solid 1px;
+        margin-left: 29px; 
+        margin-top: 18px;
+    }
+    
+    #day{
+        width: 140px;
+        height: 55px;
+        border-radius: 3px;
+        border: rgb(207, 207, 207) solid 1px;
+        margin-left: 29px; 
+        margin-top: 18px;
+    }
+    
 }
