@@ -1,0 +1,33 @@
+body{
+    width: 100vw;
+}
+
+  .column2{
+    border: solid 1px rgb(126, 126, 126);
+     height: 100vh;
+     width: 40%;
+     float: left;
+   }
+   .column3{
+    border: solid 1px rgb(126, 126, 126);
+     height: 100vh;
+     width: 34%;
+     float: left;
+   }
+.left{
+  width: 150px;
+ margin-left: 10%;
+  margin-top: 30px;
+  position: fixed;
+
+}
+ #logo{
+ margin-left: -33%;
+}
+.BTN{
+  border:none; border-radius: 30px; height: 50px; width: auto; text-align: center; background-color: #ffffff; font-size: 18px; font-weight: 700; font-family:Verdana, Geneva, Tahoma, sans-serif;  margin-bottom: 15px; padding-left:50px; padding-right: 20px; line-height: 24px;
+}
+
+.BTN:hover{
+  background-color: #d1f6ff;
+}
