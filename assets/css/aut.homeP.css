@@ -1,33 +1,393 @@
 body{
-    width: 100vw;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container-fluid {
+  
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
 }
 
-  .column2{
-    border: solid 1px rgb(126, 126, 126);
-     height: 100vh;
-     width: 40%;
-     float: left;
-   }
-   .column3{
-    border: solid 1px rgb(126, 126, 126);
-     height: 100vh;
-     width: 34%;
-     float: left;
-   }
-.left{
-  width: 150px;
- margin-left: 10%;
-  margin-top: 30px;
-  position: fixed;
+.col1,.col2{
+  border-right: solid #eff3f4 1px;
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
 
 }
- #logo{
- margin-left: -33%;
+
+/* bu menu'nun hazirlanmasi qismi burada basliyirr...(yeni birinci sutun) */
+.col1{
+  display: flex;
+ justify-content: flex-end;
 }
-.BTN{
-  border:none; border-radius: 30px; height: 50px; width: auto; text-align: center; background-color: #ffffff; font-size: 18px; font-weight: 700; font-family:Verdana, Geneva, Tahoma, sans-serif;  margin-bottom: 15px; padding-left:50px; padding-right: 20px; line-height: 24px;
+.MenuParent{
+display: flex;
+justify-content: flex-start;
+width: 255px;
+height: 100%;
+
 }
 
-.BTN:hover{
-  background-color: #d1f6ff;
+
+.Menu{
+  display: flex;
+justify-content: space-between;
+flex-direction: column;
+  width: 225px;
+  height: 100%;
 }
+#tweetBTN{
+  height: 48px; 
+  background-color: #1da1f2;
+  border:none ;
+  border-radius: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+#tweetBTN:hover{
+  background-color:#0677bd ;
+}
+#userRow{
+  height: 64px; 
+  width: 251px;
+  border-radius: 50px;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+padding-left:10px;
+}
+.hoverIcon{
+height: 50.25px;
+width: auto;
+border-radius: 50px;
+display: flex;
+align-items: center;
+padding-left:10px;
+
+}
+.hoverIcon2{
+  border-radius: 50%;
+  width: 50px;
+
+}
+.hoverIcon:hover{
+background-color: #daeefa;
+cursor: pointer;
+color: #1da1f2;
+}
+#userRow:hover{
+  background-color: #daeefa;
+cursor: pointer;
+}
+#SearchIcon{
+  position: absolute;
+ opacity: 0;
+  z-index: -4;
+}
+
+
+/* burda da bitir....... */
+
+
+/* burada ikinci sutun baslayir.... */
+.homeRow{
+  width: 100%;
+  border-bottom: solid #eff3f4 1px;
+  padding: 15px;
+  margin: 0px;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+.homeRow:hover{
+  cursor: pointer;
+}
+#topTweets{
+border-radius: 50%;
+width: 38px;
+height: 38px;
+margin-top: -8px;
+padding: 10px;
+}
+#topTweets:hover{
+  background-color: #daeefa;
+  
+}
+
+/* ....burada ikinci sutun bitdi...... */
+
+
+.col3{
+  padding: 0px;
+margin: 0px;
+height: 100vh;
+
+}
+.SearchRow{
+  margin-left: 25px;
+  margin-top:3px;
+  border-radius: 20px;
+  width: 350px;
+  height: 46px;
+  box-sizing: border-box;
+  
+}
+.TrendsForYou{
+  margin-left: 25px;
+  margin-top:15px;
+  border-radius: 15px;
+  width: 350px;
+  height: 54px;
+  background-color: #f7f9f9;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 800;
+  padding: 15px;
+  border-bottom: 1px solid #f2f5f6;
+}
+.WhoToFollowHeader{
+  margin-left: 25px;
+  margin-top:15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 350px;
+  height: 54px;
+  background-color: #f7f9f9;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 800;
+  padding: 15px;
+  border-bottom: 1px solid #f2f5f6;
+}
+.first  ,.second ,.third{
+  width: 350px;
+  height: 73px;
+  background-color: #f7f9f9;
+  margin-left: 25px;
+  border-bottom: 1px solid #f2f5f6;
+  padding: 10px;
+
+}
+.showMore{
+  width: 350px;
+  height: 52px;
+  background-color: #f7f9f9;
+  margin-left: 25px; 
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #1da1f2;
+  padding: 18px;
+}
+.first:hover  ,.second:hover ,.third:hover,.showMore:hover{
+  background-color: #eff3f4;
+  cursor: pointer;
+  
+}
+#first,#second,#third{
+  border-radius: 50%;
+  width: 48px;
+   height: 48px;
+   margin-left: 10px;
+  
+}
+#first:hover  ,#second:hover ,#third:hover{
+  -webkit-filter: brightness(80%);
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+#followBTN{
+  margin-top: 10px; 
+  margin-left: -390px;
+  padding:0px 15px;
+  border: 1px solid #1da1f2;
+   border-radius: 20px;
+   height: 32px;
+   width: 78px;
+   font-size: 15px;
+   color: #1da1f2;
+   font-weight: 700;
+}
+#followButton{
+  padding:0px 15px;
+  border: 1px solid #1da1f2;
+   border-radius: 20px;
+   height: 32px;
+   width: 78px;
+   font-size: 15px;
+   color: #1da1f2;
+   font-weight: 700;
+   margin-left: 178px; 
+   margin-top: -25px;
+   z-index: 10;
+position: absolute;
+}
+#followBTN:hover,#followButton:hover{
+background-color: #e7f4fc;
+}
+/* RESPONSIVE ETME YOLUNDA SAVASIM */
+@media screen and (max-width: 1296px) {
+ 
+.silinecek{
+  visibility: hidden;
+}
+#tweetBTN{
+  font-size: 0px;
+  width: 48px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+
+}
+.MenuParent{
+  justify-content: flex-end;
+  }
+  .Menu{
+   
+    justify-content: flex-end;
+    justify-items: flex-end;
+justify-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 80px;
+    }
+  
+    .hoverIcon{
+      width: 50.25px;
+      height: 50.25px;
+      border-radius: 50%;
+    
+      }
+      #userRow{
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+      }
+      
+}
+@media screen and (max-width: 1158px) {
+  #search{
+    display: flex;
+    max-width: 245px;
+   
+  }
+  .SearchRow{
+  
+    max-width: 291px;
+    height: 46px;
+  
+  }
+  .TrendsForYou,.WhoToFollowHeader,.third,.first,.second,.showMore{
+    max-width: 291px;
+  }
+  #followBTN{
+    margin-left:-448px ;
+  }
+  #followButton{
+    margin-left:120px ;
+  }
+}
+@media screen and (min-width: 1124px) {
+ 
+  .col1{
+    width: 27%;
+    min-width: 100px;
+    
+  }
+  .col2{
+    width: 600px;
+    flex-shrink: 0;
+
+  }
+
+  .col3{
+    width: 34%;
+    flex-shrink: 0;
+
+  }
+
+ 
+
+}
+@media screen and (min-width: 1021px) {
+ 
+  .col1{
+    min-width: 87px;
+    flex-shrink: 30000;
+  }
+  .col2{
+    width: 600px;
+    flex-shrink: 0;
+
+  }
+
+  .col3{
+    width: 34%;
+    flex-shrink: 2;
+
+  }
+
+}
+@media screen and (max-width: 1020px) {
+ 
+  .col1{
+    max-width: 192px;
+    min-width: 87px;
+    flex-shrink: 30000;
+  }
+  .col2{
+    width: 600px;
+    flex-shrink: 0;
+
+  }
+
+  .col3{
+   visibility: hidden;
+
+  }
+  .SearchRow, .TrendsForYou ,.WhoToFollow{
+    display: none;
+  }
+  #SearchIcon{
+    position: static;
+    opacity: 1;
+     z-index: 1;
+  }
+ 
+
+}
+@media screen and (max-width: 705px) {
+ 
+  .col1{
+    width: 87px;
+    flex-shrink:0;
+  }
+  .col2{
+    max-width: 600px;
+    flex-shrink:2;
+  }
+
+  .col3{
+   visibility: hidden;
+
+  }
+
+}
+
+
+

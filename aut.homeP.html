@@ -5,46 +5,201 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/aut.homeP.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/reset.css">
     <link rel="shortcut icon" href="https://img.icons8.com/fluent/96/000000/twitter.png" type="image/x-icon"> 
-    <title>Home/Twitter</title>
+    <title>Home / Twitter</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+two+tone"
       rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif:wght@700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./assets/css/aut.homeP.css">
+
       
 </head>
-<body>
-   
-    <div class="row">
-        <div class="col-3">
-          
+<body >
+   <!--Demeli burada 3 yere boluruk sehifeni ilk once container'imizi yaradaq-->
+   <div class="container-fluid">
+
+
+    <!--birinci sutun-->
+    <div class="col1">
+
+<!-- yazilar olan sutun Menu deyirem ama nem cox da uygun olmadi -->
+<div class="MenuParent">
+
+<div  class="Menu">
+
+  <div class="hoverIcon hoverIcon2" >
+    <i style="font-size: 30px; color: #1da1f2; margin-top: 10px;margin-bottom:10px;" class="fab fa-twitter "></i>
+  </div>
+
+  <div   class="hoverIcon">
+    <i style="font-size: 23px; "  class="fas fa-home"></i>
+    <span class="silinecek" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight: 700;font-size: larger;margin-left: 15px; ">Home</span>
+  </div>
+
+  <div id="SearchIcon"  class="hoverIcon">
+    <i style="font-size: 20px; "class="fas fa-search"></i>
+  </div>
+
+  <div  class="hoverIcon" >
+    <i style="font-size: 26px; "  class="fas fa-hashtag"></i>
+    <span class="silinecek" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight: 700;font-size: larger;margin-left: 17px;">Explore</span>
+  </div>
+
+ <div  class="hoverIcon">
+    <i style="font-size: 26px; "  class="far fa-bell"></i>
+    <span class="silinecek" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight: 700;font-size: larger;margin-left: 17px;">Notifications</span>
+  </div>
+
+  
+ <div  class="hoverIcon" >
+    <i style="font-size: 24px; "  class="far fa-envelope"></i>
+    <span class="silinecek" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight: 700;font-size: larger;margin-left: 15px;">Messages</span>
+  </div>
+
+  <div  class="hoverIcon">
+    <i style="font-size: 26px; "  class="far fa-bookmark"></i>
+    <span class="silinecek" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight: 700;font-size: larger;margin-left: 17px;">Bookmarks</span>
+  </div>
+
+  <div  class="hoverIcon">
+    <i style="font-size: 24px; "  class="far fa-list-alt"></i>
+    <span class="silinecek" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight: 700;font-size: larger;margin-left: 15px;">Lists</span>
+  </div>
+
+   <div  class="hoverIcon">
+    <i style="font-size: 25px; "  class="far fa-user"></i>
+    <span class="silinecek" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight: 700;font-size: larger;margin-left: 17px;">Profile</span>
+  </div>
+
+  <div  class="hoverIcon">
+    <i style="font-size:22px; "   class="fas fa-ellipsis-h"></i>
+    <span class="silinecek" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight: 700;font-size: larger;margin-left: 15px;">More</span>
+  </div>
+
+ <button id="tweetBTN" >Tweet</button>
+
+
+  <div id="userRow">
+
+
+<INPUT TYPE="image" src="./assets/images/user.png" style="border-radius: 50%;width: 40px;height: 40px;  margin-right: 10px;" ALT="Text In Case There Is No Image" />
+
+<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ">
+
+  <div  class="silinecek" style="font-weight: 700; ">UserName</div>
+  <div class="silinecek">UserName</div>
+
+</div>
+
+<i  style="font-size: 15px;justify-content: flex-end; margin-left: 65px;margin-top:10px;"  class="fas fa-ellipsis-h silinecek"></i>
+
+
+
+  </div>
+
+</div>
+
+</div>
+
+
+    </div>
+
+    <!-- ...........birinci sutun bitdi...yesssssssssss......... -->
+
+
+<!--ikinci sutun-->
+
+<div class="col2">
+
+  <div class="homeRow">
+    <span  style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight:800;font-size:20px;">Home</span>
+ 
+    <img title="Top Tweets" id="topTweets" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMy42MDcgNTEzLjYwNyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+PGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtNTAzLjM4NCAyNDMuNjg1Yy0zMC4wNTktMTIuMDUtNTguNTMzLTM0LjYyMy04Mi4zNDUtNjUuMjgxLTI0LjI4Ny0zMS4yNzEtNDMuODYyLTcxLjExNy01Ni42MDktMTE1LjIzM2wtMTQuNTg4LTUwLjQ4NWMtMS44NTQtNi40MTgtNy43MjktMTAuODM2LTE0LjQxLTEwLjgzNnMtMTIuNTU2IDQuNDE4LTE0LjQxIDEwLjgzNmwtMTQuNTg3IDUwLjQ4NGMtMTIuNzQ3IDQ0LjExNi0zMi4zMjIgODMuOTY0LTU2LjYwOSAxMTUuMjMzLTIzLjgxMiAzMC42NTgtNTIuMjg2IDUzLjIzMS04Mi4zNDYgNjUuMjgxLTUuNjEgMi4yNDktOS4zMjIgNy42NDUtOS40MTcgMTMuNjg4LS4wOTUgNi4wNDQgMy40NDYgMTEuNTU0IDguOTgzIDEzLjk3N2w0LjY2MyAyLjA0MWM1OS42NzYgMjYuMTIyIDEwOC40NDQgOTAuNDUzIDEzMy44IDE3Ni41bDE1LjUzNCA1Mi43MThjMS44OCA2LjM4IDcuNzM3IDEwLjc2IDE0LjM4OSAxMC43NnMxMi41MDgtNC4zOCAxNC4zODktMTAuNzZsMTUuNTM1LTUyLjcxOGMyNS4zNTUtODYuMDQ3IDc0LjEyNC0xNTAuMzc4IDEzMy44MDEtMTc2LjVsNC42NjItMi4wNDFjNS41MzYtMi40MjQgOS4wNzctNy45MzQgOC45ODItMTMuOTc3cy0zLjgwNi0xMS40MzgtOS40MTctMTMuNjg3em0tMTY2LjgwNSAxOTcuNzI0LTEuMTQ2IDMuODkxLTEuMTQ2LTMuODkxYy0yNC42ODgtODMuNzgxLTcwLjU3Mi0xNDkuMjY2LTEyNy44NzUtMTgzLjc1MyAyNC41MDctMTQuNzQ5IDQ3LjMzNi0zNS4zOTUgNjcuMTA2LTYwLjg1MSAyNi41OTgtMzQuMjQ0IDQ3Ljk0Ni03Ny41NzQgNjEuNzM3LTEyNS4zMDhsLjE3OC0uNjEyLjE3Ny42MTJjMTMuNzkxIDQ3LjczMyAzNS4xNCA5MS4wNjMgNjEuNzM3IDEyNS4zMDggMTkuNzcxIDI1LjQ1NiA0Mi42IDQ2LjEwMiA2Ny4xMDYgNjAuODUxLTU3LjMwMiAzNC40ODgtMTAzLjE4NiA5OS45NzItMTI3Ljg3NCAxODMuNzUzeiIgZmlsbD0iIzFkYTFmMiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIGQ9Im0xOS41NyAxNDkuNDk3IDIuMzM4IDEuMDIyYzI3LjkwMyAxMi4yMTQgNTAuODQzIDQyLjc1NCA2Mi45MzUgODMuNzg4bDcuNzkxIDI2LjQ0MWMxLjg4IDYuMzgxIDcuNzM3IDEwLjc2MSAxNC4zODkgMTAuNzYxIDYuNjUgMCAxMi41MDgtNC4zOCAxNC4zODktMTAuNzZsNy43OTItMjYuNDQxYzEyLjA5Mi00MS4wMzUgMzUuMDMxLTcxLjU3NSA2Mi45MzQtODMuNzg4bDIuMzM5LTEuMDIzYzUuNTM3LTIuNDIzIDkuMDc5LTcuOTMzIDguOTg0LTEzLjk3Ny0uMDk0LTYuMDQzLTMuODA3LTExLjQzOS05LjQxNy0xMy42ODgtMjguNzA5LTExLjUwOS01My4xMTgtNDMuNTM2LTY1LjI5NC04NS42NzVsLTcuMzE2LTI1LjMyMWMtMS44NTYtNi40MTgtNy43MzEtMTAuODM2LTE0LjQxMi0xMC44MzZzLTEyLjU1NyA0LjQxOS0xNC40MTEgMTAuODM3bC03LjMxNCAyNS4zMmMtMTIuMTc2IDQyLjEzOS0zNi41ODUgNzQuMTY2LTY1LjI5NCA4NS42NzUtNS42MSAyLjI0OS05LjMyMiA3LjY0Ni05LjQxNyAxMy42ODgtLjA5NSA2LjA0NCAzLjQ0NyAxMS41NTQgOC45ODQgMTMuOTc3em04Ny40NTItODQuMjU0YzEyLjA1NSAzMC4yNjIgMjkuODA3IDU0LjYxOCA1MS4yOSA3MC41NzctMjEuNDc5IDE2LjA2Mi0zOS4yNzUgNDAuNTgyLTUxLjI5IDcwLjg0Ni0xMi4wMTQtMzAuMjY0LTI5LjgxLTU0Ljc4My01MS4yODktNzAuODQ2IDIxLjQ4My0xNS45NTkgMzkuMjM0LTQwLjMxNSA1MS4yODktNzAuNTc3eiIgZmlsbD0iIzFkYTFmMiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIGQ9Im0xMzQuNzA0IDQwMC42NzJjLTE4LjY3OS03LjQ4OC0zNC42NTYtMjguNjYtNDIuNzQtNTYuNjM2bC01LjA4OS0xNy42MTdjLTEuODU0LTYuNDE4LTcuNzMtMTAuODM3LTE0LjQxMS0xMC44MzctNi42OCAwLTEyLjU1NiA0LjQxOC0xNC40MSAxMC44MzZsLTUuMDkxIDE3LjYxOGMtOC4wODMgMjcuOTc2LTI0LjA2MSA0OS4xNDctNDIuNzM5IDU2LjYzNi01LjYxIDIuMjQ5LTkuMzIzIDcuNjQ2LTkuNDE3IDEzLjY4OC0uMDk1IDYuMDQ0IDMuNDQ3IDExLjU1NCA4Ljk4NSAxMy45NzdsMS42MjUuNzExYzE3LjkwOCA3Ljg0IDMzLjMyNCAyOC41NTIgNDEuMjM3IDU1LjQwNGw1LjQyMSAxOC4zOTZjMS44ODEgNi4zOCA3LjczNyAxMC43NiAxNC4zODkgMTAuNzZzMTIuNTA4LTQuMzggMTQuMzg5LTEwLjc2bDUuNDIxLTE4LjM5NmM3LjkxMi0yNi44NTMgMjMuMzI4LTQ3LjU2MyA0MS4yMzUtNTUuNDAybDEuNjI3LS43MTJjNS41MzgtMi40MjMgOS4wOC03LjkzMyA4Ljk4NS0xMy45NzctLjA5NC02LjA0NC0zLjgwNy0xMS40NC05LjQxNy0xMy42ODl6bS02Mi4yNDEgNTEuOTEyYy03LjQyOS0xNS4zNzktMTcuMTAxLTI4LjI5Ny0yOC4zNzYtMzcuOTMyIDExLjI3OS05LjU4IDIwLjkzNy0yMi40MjggMjguMzc2LTM3Ljc5NSA3LjQzOSAxNS4zNjcgMTcuMDk3IDI4LjIxNSAyOC4zNzYgMzcuNzk1LTExLjI3NyA5LjYzNC0yMC45NDcgMjIuNTUxLTI4LjM3NiAzNy45MzJ6IiBmaWxsPSIjMWRhMWYyIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PC9nPjwvZz48L3N2Zz4=" />
+  </div>
+
+
+
+</div>
+
+<!--ucuncu sutun-->
+
+<div class="col3">
+
+
+  <div class="SearchRow">
+
+    <label id="searchLabel" for="search" style="border-top-left-radius: 20px;border-bottom-left-radius: 20px;  height: 44px;width: 44px;background-color: #eff3f4; float: left; border: none;display: flex;justify-content: center;align-items: center;"> <i style="font-size: 20px; color: #536471; "class="fas fa-search"></i></label>
+    <input  id="search" style="outline: none; border-top-right-radius: 20px;border-bottom-right-radius: 20px;  height: 44px; width:304px;background-color: #eff3f4; border: none;display: flex;" type="search" placeholder="Search Twitter">
+  </div>
+
+
+  <div class="TrendsForYou">
+
+    <div class="HeaderTrends">
+      Trends for you
+    </div>
+
     
-           
-          
-          <div class="left" aria-orientation="vertical">
-          
-            <span class="material-icons-two-tone">
-                tag
-                </span>
-            <button class="BTN" href=""> Home</button>
-            <button class="BTN" href=""> Explore</button>
-            <button class="BTN" href=""> Notifications</button>
-            <button class="BTN" href=""> Messages</button>
-            <button class="BTN" href=""> Bookmarks</button>
-            <button class="BTN" href=""> Lists</button>
-            <button  class="BTN" href=""> Profile</button>
-            <button class="BTN" href=""> More</button>
-           
-         </div>
-        </div>
-       
+  </div>
+
+  <div class="WhoToFollow">
+
+    <div class="WhoToFollowHeader">
+      Who to follow
+    </div>
+
+    <div style="display: flex;" class="first">
+<img src="./assets/images/poo.jpg" style="float: left; margin-right: 10px;" id="first" alt="">
+
+<div style="display: flex; ">
+<div style="font-size:15px; justify-self: flex-start; ">Adile_13</div>
+
+<img style="justify-self: flex-end;margin-bottom: 40px;margin-left: 5px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ5NiA0OTYuMDE0NjEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTQ1NS44ODI4MTIgMTI4LjAwMzkwNi02MC44MDA3ODEtMjcuMDQ2ODc1LTI3LjA3MDMxMi02MC44MjQyMTktNjYuMTY3OTY5IDYuOTEwMTU3LTUzLjgzMjAzMS0zOS4wMzkwNjMtNTMuODYzMjgxIDM5LjAzOTA2My02Ni4xMzY3MTktNi45MTAxNTctMjcuMDUwNzgxIDYwLjc5Njg3Ni02MC44MjQyMTkgMjcuMDc0MjE4IDYuOTE0MDYyIDY2LjE2Nzk2OS0zOS4wMzkwNjIgNTMuODMyMDMxIDM5LjAzOTA2MiA1My44NjMyODItNi45MTQwNjIgNjYuMTM2NzE4IDYwLjgwMDc4MSAyNy4wNDY4NzUgMjcuMDc0MjE5IDYwLjgyNDIxOSA2Ni4xNjc5NjktNi45MTAxNTYgNTMuODMyMDMxIDM5LjAzOTA2MiA1My44NjMyODEtMzkuMDM5MDYyIDY2LjEzNjcxOSA2LjkxMDE1NiAyNy4wNDY4NzUtNjAuODAwNzgxIDYwLjgyNDIxOC0yNy4wNzAzMTMtNi45MTQwNjItNjYuMTY3OTY4IDM5LjA0Mjk2OS01My44MzIwMzItMzkuMDQyOTY5LTUzLjg2MzI4MXptLTI1NS44NzEwOTMgMjE2LTY3LjkyMTg3NS02Ny45MjE4NzUgMjIuNjQwNjI1LTIyLjU1ODU5MyA0NS4yODEyNSA0NS4xOTkyMTggMTM1Ljc1NzgxMi0xMzUuNzU3ODEyIDIyLjY0MDYyNSAyMi42MzY3MTh6bTAgMCIgZmlsbD0iIzFkYTFmMiIgZGF0YS1vcmlnaW5hbD0iIzU3YTRmZiIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbD0iIzFlODFjZSI+PHBhdGggZD0ibTQ5NC40OTIxODggMjQzLjMwODU5NC0zNy4yNS01MS4zODY3MTkgNi42MDE1NjItNjMuMTA5Mzc1Yy4zNTkzNzUtMy40NDkyMTktMS41MzkwNjItNi43MzQzNzUtNC43MDcwMzEtOC4xNDQ1MzFsLTU3Ljk4MDQ2OS0yNS44MDA3ODEtMjUuODAwNzgxLTU3Ljk4NDM3NmMtMS40MTc5NjktMy4xNjAxNTYtNC42OTkyMTktNS4wNTQ2ODctOC4xNDQ1MzEtNC43MTA5MzdsLTYzLjEyMTA5NCA2LjU5NzY1Ni01MS4zODI4MTMtMzcuMjQ2MDkzYy0yLjgwMDc4MS0yLjAzMTI1LTYuNTg5ODQzLTIuMDMxMjUtOS4zOTA2MjUgMGwtNTEuMzg2NzE4IDM3LjI0NjA5My02My4xMTcxODgtNi41OTc2NTZjLTMuNDQxNDA2LS4zMjgxMjUtNi43MTA5MzggMS41NjI1LTguMTQ0NTMxIDQuNzAzMTI1bC0yNS44MDA3ODEgNTcuOTg0Mzc1LTU3Ljk4NDM3NiAyNS44MDg1OTRjLTMuMTY0MDYyIDEuNDA2MjUtNS4wNjI1IDQuNjkxNDA2LTQuNzAzMTI0IDguMTM2NzE5bDYuNTk3NjU2IDYzLjExNzE4Ny0zNy4yNDYwOTQgNTEuMzg2NzE5Yy0yLjAzMTI1IDIuODAwNzgxLTIuMDMxMjUgNi41ODk4NDQgMCA5LjM5MDYyNWwzNy4yNDYwOTQgNTEuMzgyODEyLTYuNTk3NjU2IDYzLjEyMTA5NGMtLjM2MzI4MiAzLjQ0NTMxMyAxLjUzNTE1NiA2LjczNDM3NSA0LjcwMzEyNCA4LjE0NDUzMWw1Ny45ODQzNzYgMjUuODAwNzgyIDI1LjgwMDc4MSA1Ny45ODQzNzRjMS40MjU3ODEgMy4xNDg0MzggNC42OTkyMTkgNS4wNDI5NjkgOC4xNDQ1MzEgNC43MTA5MzhsNjMuMTE3MTg4LTYuNjAxNTYyIDUxLjM4NjcxOCAzNy4yNWMyLjgwMDc4MiAyLjAzMTI1IDYuNTg5ODQ0IDIuMDMxMjUgOS4zOTA2MjUgMGw1MS4zODI4MTMtMzcuMjUgNjMuMTIxMDk0IDYuNjAxNTYyYzMuNDQ1MzEyLjM0NzY1NiA2LjcyMjY1Ni0xLjU0Njg3NSA4LjE0NDUzMS00LjcwMzEyNWwyNS44MDA3ODEtNTcuOTg0Mzc1IDU3Ljk4MDQ2OS0yNS44MDg1OTRjMy4xNjQwNjItMS40MTAxNTYgNS4wNjI1LTQuNjkxNDA2IDQuNzA3MDMxLTguMTM2NzE4bC02LjYwMTU2Mi02My4xMjEwOTQgMzcuMjUtNTEuMzgyODEzYzIuMDM1MTU2LTIuODAwNzgxIDIuMDM1MTU2LTYuNTk3NjU2IDAtOS4zOTg0Mzd6bS01MiA1My44NjMyODFjLTEuMTYwMTU3IDEuNTk3NjU2LTEuNjg3NSAzLjU2NjQwNi0xLjQ4MDQ2OSA1LjUyNzM0NGw2LjMwNDY4NyA2MC4zODI4MTItNTUuNDgwNDY4IDI0LjY5OTIxOWMtMS44MTI1Ljc5Njg3NS0zLjI2NTYyNiAyLjI0MjE4OC00LjA2NjQwNyA0LjA1NDY4OGwtMjQuNjc5Njg3IDU1LjQ4MDQ2OC02MC4zOTg0MzgtNi4zMTI1Yy0xLjk2MDkzNy0uMjAzMTI1LTMuOTI1NzgxLjMyODEyNS01LjUxOTUzMSAxLjQ4ODI4MmwtNDkuMTYwMTU2IDM1LjYzMjgxMi00OS4xNjc5NjktMzUuNjMyODEyYy0xLjM2MzI4MS0uOTk2MDk0LTMuMDAzOTA2LTEuNTMxMjUtNC42ODc1LTEuNTI3MzQ0LS4yODEyNSAwLS41NjI1IDAtLjgwMDc4MS4wMzkwNjJsLTYwLjQwMjM0NCA2LjMxMjUtMjQuNjc5Njg3LTU1LjQ4MDQ2OGMtLjgwNDY4OC0xLjgxMjUtMi4yNS0zLjI2MTcxOS00LjA2MjUtNC4wNjY0MDdsLTU1LjUxMTcxOS0yNC42ODc1IDYuMzA0Njg3LTYwLjM4MjgxMmMuMjAzMTI1LTEuOTYwOTM4LS4zMjQyMTgtMy45Mjk2ODgtMS40ODA0NjgtNS41MjczNDRsLTM1LjYzMjgxMy00OS4xNjc5NjkgMzUuNjMyODEzLTQ5LjE2Nzk2OGMxLjE1NjI1LTEuNTk3NjU3IDEuNjgzNTkzLTMuNTY2NDA3IDEuNDgwNDY4LTUuNTI3MzQ0bC02LjMwNDY4Ny02MC4zODY3MTkgNTUuNDgwNDY5LTI0LjY5NTMxM2MxLjgxMjUtLjc5Njg3NCAzLjI2MTcxOC0yLjI0MjE4NyA0LjA2MjUtNC4wNTQ2ODdsMjQuNjc5Njg3LTU1LjQ4MDQ2OSA2MC40MDIzNDQgNi4zMTI1YzEuOTU3MDMxLjE5NTMxMyAzLjkyMTg3NS0uMzM1OTM3IDUuNTE5NTMxLTEuNDg4MjgxbDQ5LjE2Nzk2OS0zNS42MzI4MTMgNDkuMTY3OTY5IDM1LjYzMjgxM2MxLjU5Mzc1IDEuMTU2MjUgMy41NTg1OTMgMS42ODM1OTQgNS41MTk1MzEgMS40ODgyODFsNjAuMzk4NDM3LTYuMzEyNSAyNC42Nzk2ODggNTUuNDgwNDY5Yy44MDQ2ODcgMS44MTI1IDIuMjUzOTA2IDMuMjU3ODEzIDQuMDY2NDA2IDQuMDYyNWw1NS40ODA0NjkgMjQuNjg3NS02LjMwNDY4OCA2MC4zODY3MTljLS4yMDcwMzEgMS45NjA5MzcuMzIwMzEzIDMuOTI5Njg3IDEuNDgwNDY5IDUuNTI3MzQ0bDM1LjYyODkwNiA0OS4xNjc5Njh6bTAgMCIgZmlsbD0iIzFkYTFmMiIgZGF0YS1vcmlnaW5hbD0iIzFlODFjZSIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIGQ9Im0zNDEuNDI1NzgxIDE1Ny4zMDg1OTRjLTMuMTI1LTMuMTI1LTguMTg3NS0zLjEyNS0xMS4zMTI1IDBsLTEzMC4xMDE1NjIgMTMwLjEwMTU2Mi0zOS42MjUtMzkuNTUwNzgxYy0zLjEyMTA5NC0zLjExMzI4MS04LjE3NTc4MS0zLjExMzI4MS0xMS4yOTY4NzUgMGwtMjIuNjc5Njg4IDIyLjU0Mjk2OWMtMS41MDM5MDYgMS41LTIuMzUxNTYyIDMuNTM5MDYyLTIuMzUxNTYyIDUuNjY0MDYycy44NDc2NTYgNC4xNjQwNjMgMi4zNTE1NjIgNS42NjQwNjNsNjcuOTIxODc1IDY3LjkyMTg3NWMzLjEyMTA5NCAzLjEyMTA5NCA4LjE4NzUgMy4xMjEwOTQgMTEuMzEyNSAwbDE1OC4zOTg0MzgtMTU4LjQwMjM0NGMzLjEyMTA5My0zLjEyMTA5NCAzLjEyMTA5My04LjE4NzUgMC0xMS4zMTI1em0tMTQxLjQxNDA2MiAxNzUuMzgyODEyLTU2LjYwMTU2My01Ni42MDE1NjIgMTEuMzEyNS0xMS4yODUxNTYgMzkuNjQwNjI1IDM5LjU1ODU5M2MzLjEyMTA5NCAzLjExNzE4OCA4LjE3OTY4OCAzLjExNzE4OCAxMS4zMDQ2ODggMGwxMzAuMTAxNTYyLTEzMC4wODk4NDMgMTEuMzI4MTI1IDExLjMyODEyNHptMCAwIiBmaWxsPSIjMWRhMWYyIiBkYXRhLW9yaWdpbmFsPSIjMWU4MWNlIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PC9nPjwvZz48L3N2Zz4=" />
+<div style="color:#536471;margin-top:20px;clear: both;margin-left: -75px;">@Adile13</div>
+</div>
+
+<button id="followBTN">Follow</button>
+
+
+    </div>
+
+    <div class="second">
       
+<img src="./assets/images/shifu.jpg" style="float: left;margin-right: 10px;" alt="" id="second">
+<div style="font-size:15px;">
+  <div>Rasim</div>
+  <div style="color:#536471;margin-top:5px;">@Rasim</div>
+  <button id="followButton">Follow</button>
+</div>
 
+    </div>
 
+    <div class="third">
+<img src="./assets/images/monkey.jpg"style="float: left;margin-right: 10px;" alt="" id="third">
+<div style="font-size:15px;">
+  <div>Emil</div>
+  <div style="color:#536471;margin-top:5px;">@Emil</div>
+  <button id="followButton">Follow</button>
 
+  </div>
+    </div>
 
-        <div class="column2"></div>
-        <div class="column3"></div>
-      
+    <div class="showMore">
+      Show more
+    </div>
+  </div>
+
+</div>
+
+   </div>
+  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script type="text/javascript" src="./assets/js/aut.HomeP.js">
+ 
+  </script>
 </body>
 </html>
